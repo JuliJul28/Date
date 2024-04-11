@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #FFB7CE;
+        }
+        h1 {
+            color: whitesmoke;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            margin-left: auto;
+            height: 750px;    
+            text-align: center;
+        }
+        .container {
+            position: relative;   
+            height: 20vh;
+            height: auto;          
+        }
+        #img {
+            position: absolute;      
+            top: 50%;              
+            left: 50%;               
+            transform: translate(-35%, -150%); 
+        }
+        .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    margin: 0 10px;
+    padding:   15px 50px;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #cf91b5; 
+    color: white;              
+    border: none;              
+    border-radius: 4px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+    </style>
+</head>
+<body>
+
+<h1>date?</h1>
+<div class="container">
+    <img id="img" src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="cat">
+</div>
+<div class="button-container">
+    <button class="button" id="yes">Yes</button>
+    <button class="button" id="no">No</button>
+</div>
+
+<script>
+    document.getElementById('yes').addEventListener('click', function() {
+        window.location.href='yes.html' ;
+    });
+</script>
+</body>
+</html>
